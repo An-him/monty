@@ -1,5 +1,5 @@
 # Monty
-
+###### The goal of this project is to create a monty ByteCodes files interpreter
 # Learning Objectives
 ## General
 ##### What do LIFO and FIFO mean
