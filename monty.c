@@ -7,12 +7,10 @@
  **/
 int main(int argc, char *argv[])
 {
-	if (argc == 0 || argc > 2)
-	{
-		printf("USAGE: monty file\n");
-		return (EXIT_FAILURE);
-	}
-
-	FILE *fp = argv[2];
-	return (EXIT_SUCCESS);
+  if (argc != 2)
+    {
+      printf("USAGE: monty file\n");
+      exit(EXIT_FAILURE);
+    }
+  parse_file(argv[1]);
 }
