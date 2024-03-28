@@ -18,4 +18,4 @@
 
 ##### What is the proper way to use global variables
 
-## Challenges
+## Challenges we have faced
