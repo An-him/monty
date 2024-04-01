@@ -1,6 +1,4 @@
 #include "monty.h"
-#include <stdio.h>
-#include <unistd.h>
 /**
  *main - monty interpreter
  *@argc: count of args
@@ -28,25 +26,7 @@ int main(int argc, char *argv[])
 	}
 	while ((BytesRead = getline(&lineptr, &n, fp)) != -1)
 	{
-		char *token = strtok(lineptr, " \t\n");
-		if (token != NULL)
-		{
-			if (strcmp(token, "push") == 0)
-			{
-				token = strtok(NULL, " \t\n");
-				if (token != NULL)
-				{
-					int value = atoi(token);
-					printf("Pushing value: %d\n", value);
-					// DO teh push operation with value like this: push(value);
-				}
-			}
-			if (strcmp(token, "pall") == 0)
-			{
-				printf("Printing all values\n");
-				// DO teh print all operation with value like this: pall();
-			}
-		}
+	  printf("%s\n", lineptr);
 	}
 	free(lineptr);
 	fclose(fp);
